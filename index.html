@@ -15,23 +15,21 @@
     -->
 
     <style>
-        /* ============================================
-           🎨 CSS VARIABLES — Change these to customize!
-           ============================================ */
+        /* CSS VARIABLES */
         :root {
-            --primary: #6C63FF;      /* Main color - buttons, links, highlights */
-            --primary-dark: #5A52D5; /* Darker shade for hover effects */
-            --bg: #0f0f1a;           /* Background color */
-            --bg-card: #1a1a2e;      /* Card/section background */
-            --text: #e0e0e0;         /* Main text color */
-            --text-muted: #a0a0b0;   /* Secondary text */
-            --border: #2a2a3e;       /* Border color */
-            --radius: 12px;          /* Rounded corners */
-            --shadow: 0 4px 20px rgba(0,0,0,0.3);
+            --primary: #d4af37;      /* Main color - buttons, links, highlights */
+            --primary-dark: #b8860b; /* Darker shade for hover effects */
+            --bg: #1b1410;           /* Background color */
+            --bg-card: #281e17;     /* Card/section background */
+            --text: #f4ecd8;        /* Main text color */
+            --text-muted: #a89078;   /* Secondary text */
+            --border: #4a3625;       /* Border color */
+            --radius: 4px;          /* Rounded corners */
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
         }
 
         /* ============================================
-           🌟 RESET & BASE STYLES
+           RESET & BASE STYLES
            ============================================ */
         * {
             margin: 0;
@@ -108,9 +106,8 @@
             cursor: pointer;
         }
 
-        /* ============================================
-           🦸 HERO SECTION
-           ============================================ */
+        /* 🦸 HERO SECTION */
+        /* Main Picture */
         .hero {
             max-width: 1100px;
             margin: 0 auto;
@@ -121,6 +118,7 @@
             min-height: 80vh;
         }
 
+        /* "Hi, I'm..." TextE */
         .hero-text h1 {
             font-size: 3rem;
             margin-bottom: 0.5rem;
@@ -130,12 +128,14 @@
             color: var(--primary);
         }
 
+        /* "Non-Aspiring..." TextE */
         .hero-text .subtitle {
             font-size: 1.3rem;
             color: var(--text-muted);
             margin-bottom: 1.5rem;
         }
 
+        /* "I build..." TextE */
         .hero-text p {
             font-size: 1.1rem;
             color: var(--text-muted);
@@ -143,6 +143,7 @@
             margin-bottom: 2rem;
         }
 
+        /* "View My Work/Get In Touch" ButtonE */
         .btn {
             display: inline-block;
             padding: 0.8rem 2rem;
@@ -193,7 +194,7 @@
             border-radius: 50%;
         }
         /* ============================================
-           📋 SECTIONS (About, Projects, Skills, Contact)
+           📋 SECTIONS (About, Achievements, Skills, Contact)
            ============================================ */
         section {
             max-width: 1100px;
@@ -258,7 +259,7 @@
             font-size: 0.9rem;
         }
 
-        /* Projects Grid */
+        /* Achievement Grid */
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -449,12 +450,13 @@
          🧭 NAVIGATION — Change the links as needed!
          ============================================ -->
     <nav>
+      
         <div class="nav-inner">
             <a href="#" class="logo">My Portfolio</a>
             <button class="menu-toggle" onclick="toggleMenu()">☰</button>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#projects">Achievements</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -474,12 +476,12 @@
                 real, non-working code. Never learning, never creating.
             </p>
             <div>
-                <a href="#projects" class="btn">View My Work</a>
+                <a href="#projects" class="btn">View My Achievements</a>
                 <a href="#contact" class="btn btn-outline">Get In Touch</a>
             </div>
         </div>
         <div class="hero-avatar">
-          <img src = "./black wallpaper.jfif">
+          <img src = "">
         </div>
         <!-- Change the emoji above to something that represents you!
              Or replace with an <img> tag for your photo! -->
@@ -493,26 +495,29 @@
         <div class="about-content">
             <div class="about-text">
                 <p>
-                    I'm a passionate web developer who loves creating clean,
-                    user-friendly websites. I started coding in high school
-                    and haven't stopped since!
+                    Hi, nama saya Daniel Kevin Tanujaya, biasa dipanggil Daniel.
+                    Saya adalah murid kelas 10. Sekarang saya sekolah di SMA Wardaya.
                 </p>
                 <p>
-                    When I'm not coding, you can find me exploring new
-                    technologies, contributing to open-source projects,
-                    or learning about UI/UX design.
+                    Saya tertarik pada bidang Fisika. Sebagai pelajar, saya terbiasa
+                    berpikir kritis, disiplin, dan fokus pada pemecahan masalah. Saya
+                    berkompetisi dengan diri sendiri untuk terus meningkatkan kapasitas
+                    diri, baik lewat jalur akademis maupun organisasi sekolah.
+                </p>
+                <p>
+                  "Don't gamble and don't do drugs kids" -Daniel
                 </p>
                 <div class="about-stats">
                     <div class="stat">
-                        <div class="number" id="projectCount">0</div>
+                        <div class="number" id="projectCount">-1</div>
                         <div class="label">Projects</div>
                     </div>
                     <div class="stat">
-                        <div class="number">2+</div>
+                        <div class="number">16+</div>
                         <div class="label">Years Learning</div>
                     </div>
                     <div class="stat">
-                        <div class="number">∞</div>
+                        <div class="number">0</div>
                         <div class="label">Curiosity</div>
                     </div>
                 </div>
@@ -525,49 +530,36 @@
          Add more project cards, or remove the examples
          ============================================ -->
     <section id="projects">
-        <h2>My Projects</h2>
+        <h2>My Achievements</h2>
         <div class="projects-grid" id="projectsGrid">
 
-            <!-- Project Card 1 — Replace with YOUR project! -->
+            <!-- Achievement Card 1 -->
             <div class="project-card">
-                <h3>🏪 E-Commerce Landing Page</h3>
-                <p>A responsive, modern landing page for an online store
-                   built with HTML, CSS, and JavaScript.</p>
+                <h3>Magang IT</h3>
+                <p>Pada Desember 2025, saya magang di Rumah Sakit Atma Jaya.
+                Saya magang di bagian IT (Infrastruktur).</p>
                 <div class="tags">
-                    <span class="tag">HTML</span>
-                    <span class="tag">CSS</span>
-                    <span class="tag">JavaScript</span>
                 </div>
-                <a href="#" class="btn">View Project →</a>
             </div>
 
-            <!-- Project Card 2 -->
+            <!-- Achievement Card 2 -->
             <div class="project-card">
-                <h3>📝 Task Manager App</h3>
-                <p>A simple to-do list application with local storage
-                   support — no backend needed!</p>
-                <div class="tags">
-                    <span class="tag">HTML</span>
-                    <span class="tag">CSS</span>
-                    <span class="tag">JS (LocalStorage)</span>
+                <h3>📝 Lomba</h3>
+                <p>Saya mengikuti beberapa lomba sejak SMP seperti OSN</p>
                 </div>
-                <a href="#" class="btn">View Project →</a>
             </div>
 
-            <!-- Project Card 3 -->
+            <!-- Achievement Card 3 -->
             <div class="project-card">
-                <h3>🎨 Color Palette Generator</h3>
-                <p>Generate beautiful color palettes with a single click.
-                   Perfect for designers and developers.</p>
+                <h3>dan lain-lain</h3>
+                <p>dan lain-lain :)</p>
                 <div class="tags">
-                    <span class="tag">HTML</span>
-                    <span class="tag">CSS</span>
-                    <span class="tag">JavaScript</span>
+                    <span class="tag">dan</span>
+                    <span class="tag">lain</span>
+                    <span class="tag">lain</span>
                 </div>
-                <a href="#" class="btn">View Project →</a>
+                <a href="#" class="btn">dan lain-lain</a>
             </div>
-
-        </div>
     </section>
 
     <!-- ============================================
@@ -578,33 +570,39 @@
         <div class="skills-container">
 
             <div class="skill-category">
-                <h3>🌐 Frontend</h3>
+                <h3>Frontend</h3>
                 <div class="skill-list">
-                    <span class="skill-item">HTML5</span>
-                    <span class="skill-item">CSS3</span>
-                    <span class="skill-item">JavaScript</span>
-                    <span class="skill-item">Responsive Design</span>
-                    <span class="skill-item">Flexbox</span>
-                    <span class="skill-item">Grid</span>
+                    <span class="skill-item">Baik</span>
+                    <span class="skill-item">Sabar</span>
+                    <span class="skill-item">Taat</span>
+                    <span class="skill-item">Penolong</span>
+                    <span class="skill-item">Rendah hati</span>
+                    <span class="skill-item">dan masih banyak lagi</span>
                 </div>
             </div>
 
             <div class="skill-category">
                 <h3>🛠️ Tools</h3>
                 <div class="skill-list">
-                    <span class="skill-item">Git & GitHub</span>
+                    <span class="skill-item">GitHub</span>
                     <span class="skill-item">VS Code</span>
-                    <span class="skill-item">Figma</span>
-                    <span class="skill-item">Chrome DevTools</span>
+                    <span class="skill-item">AI</span>
                 </div>
             </div>
 
             <div class="skill-category">
                 <h3>📚 Learning</h3>
                 <div class="skill-list">
-                    <span class="skill-item">Python</span>
-                    <span class="skill-item">React (soon!)</span>
-                    <span class="skill-item">Node.js (soon!)</span>
+                    <span class="skill-item">Mathematics</span>
+                    <span class="skill-item">Physics</span>
+                    <span class="skill-item">Chemistry</span>
+                    <span class="skill-item">Biology</span>
+                    <span class="skill-item">Coding</span>
+                    <span class="skill-item">English</span>
+                    <span class="skill-item">History</span>
+                    <span class="skill-item">Bahasa Indonesia</span>
+                    <span class="skill-item">Physical Education</span>
+                    <span class="skill-item">Religion</span>
                 </div>
             </div>
 
@@ -617,14 +615,14 @@
     <section id="contact">
         <h2>Get In Touch</h2>
         <div class="contact-links">
-            <a href="mailto:your.email@example.com" class="contact-link">
-                📧 Email Me
+            <a href="#" class="contact-link">
+                📞 +62 859 7257 3414
             </a>
-            <a href="https://github.com/yourusername" target="_blank" class="contact-link">
+            <a href="https://github.com/Daniel-Kev" target="_blank" class="contact-link">
                 💻 GitHub
             </a>
             <a href="#" class="contact-link">
-                💼 LinkedIn
+                📧 daniel.kevintanujaya@wardayaschool.sch.id
             </a>
         </div>
     </section>
@@ -633,7 +631,7 @@
          📄 FOOTER
          ============================================ -->
     <footer>
-        <p>© <span id="currentYear">2026</span> Your Name — Built with 💜 and vanilla code</p>
+        <p>© <span id="currentYear">2026</span> Daniel Kevin Tanujaya — Built by me and AI</p>
     </footer>
 
     <!-- ============================================
@@ -659,12 +657,6 @@
         // 📅 Auto-update copyright year
         // ============================================
         document.getElementById('currentYear').textContent = new Date().getFullYear();
-
-        // ============================================
-        // 🔢 Count projects automatically
-        // ============================================
-        const projectCount = document.querySelectorAll('.project-card').length;
-        document.getElementById('projectCount').textContent = projectCount;
 
         // ============================================
         // ✨ Smooth scroll for all anchor links
